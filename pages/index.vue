@@ -8,7 +8,7 @@
   <first-loading id="first_loading_area"
     @onload="video_play"
   />
-  <terms/>
+  <terms v-if="video_done"/>
   <snow class="snow front" ref="bg_snow_front" :type="'front'" :count="20"/>
 </div>
 </template>
@@ -28,7 +28,8 @@ export default {
   },
   data() {
     return {
-      video_load: false
+      video_load: false,
+      video_done: false
     }
   },
   methods: {
@@ -41,6 +42,7 @@ export default {
       this.$refs.bg_video.blur()
       this.$refs.bg_snow.blur()
       this.$refs.bg_snow_front.blur()
+      this.video_done = true
     }
   }
 }
@@ -59,6 +61,7 @@ export default {
     top: 0;
     bottom: 0;
     overflow: hidden;
+    pointer-events: none;
   }
 }
 </style>

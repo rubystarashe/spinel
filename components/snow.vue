@@ -142,7 +142,7 @@ export default {
 .snow_canvas {
   width: 100%;
   height: 100%;
-  filter: blur(var(--snow_blur)) contrast(175%) brightness(100%);
+  filter: blur(var(--snow_blur)) contrast(175%) brightness(100%) grayscale(1);
   transition: all 1s;
 }
 </style>
