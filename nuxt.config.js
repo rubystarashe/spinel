@@ -1,6 +1,6 @@
 module.exports = {
   router: {
-    base: '/opportunity/'
+    base: '/spinel/'
   },
   head: {
     title: "Spinel for Skyrim Gameplay",
