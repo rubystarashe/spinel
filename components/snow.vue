@@ -112,7 +112,7 @@ export default {
         }
 
         var image = new Image();
-        image.src = '/snow_'+ i%6 +'.png';
+        image.src = '/spinel/snow_'+ i%6 +'.png';
         this.ctx.drawImage(image,flake.x,flake.y, flake.size, flake.size)
         flake.y += flake.velY
         flake.x += flake.velX

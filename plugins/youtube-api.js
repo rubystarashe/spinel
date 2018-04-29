@@ -2,7 +2,7 @@ import Vue from 'vue'
 
 export default ({ app, store, route, error, redirect }) => {
   window.addEventListener('event-youtube', async () => {
-    while (!YT) {
+    while (!(YT || {}).Player) {
       await new Promise(r => setTimeout(r, 100))
     }
     Vue.prototype.$YT = YT

@@ -9,7 +9,7 @@
         <div class="border left"/>
         <div class="border right"/>
       </div>
-      <img src="/skyrim_logo.png" id="first_loading_skyrim_logo">
+      <img src="/spinel/skyrim_logo.png" id="first_loading_skyrim_logo">
     </div>
     <div v-if="frame == 1" id="first_loading_1" key="1">
       <div id="first_loading_1_text">
@@ -41,7 +41,7 @@ export default {
 <style lang="scss" scoped>
 @font-face{
     font-family: 'Angel';
-    src: url(/angel.otf) format('truetype')
+    src: url(/spinel/angel.otf) format('truetype')
 }
 
 #first_loading_area {
