@@ -34,9 +34,10 @@ export default {
   },
   methods: {
     video_play() {
-      this.$refs.bg_video.play()
       this.$refs.bg_snow.blur()
       this.$refs.bg_snow_front.blur()
+      if(this.$device.isDesktop) this.$refs.bg_video.play()
+      else this.video_paused()
     },
     video_paused() {
       this.$refs.bg_video.blur()

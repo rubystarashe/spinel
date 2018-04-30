@@ -26,6 +26,9 @@ module.exports = {
       'babel-polyfill'
     ]
   },
+  modules: [
+    'nuxt-device-detect',
+  ],
   css: [
     'normalize.css/normalize.css'
   ],

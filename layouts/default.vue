@@ -17,7 +17,21 @@ export default {
 }
 </script>
 
-<style>
+<style lang="scss" scoped>
+@import url('//fonts.googleapis.com/earlyaccess/nanumgothic.css');
+
+html {
+  font-family : 'Nanum Gothic';
+  font-weight: normal;
+  -webkit-font-smoothing: antialiased;
+  * {
+    outline: none;
+    text-decoration: none;
+  }
+  * {
+    user-select: none;
+  }
+}
 body {
   background: black;
 }

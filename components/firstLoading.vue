@@ -53,6 +53,7 @@ export default {
     bottom: 0;
     margin: auto;
     width: 60vh;
+    max-width: 80vw;
     height: 30vh;
     color: white;
     display: flex;
