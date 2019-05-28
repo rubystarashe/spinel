@@ -1,0 +1,33 @@
+{
+  "name": "spinel",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nuxt",
+    "generate": "nuxt generate",
+    "deploy": "push-dir --dir=dist --branch=gh-pages --cleanup"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rubystarashe/spinel.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rubystarashe/spinel/issues"
+  },
+  "homepage": "https://github.com/rubystarashe/spinel#readme",
+  "dependencies": {
+    "babel-polyfill": "^6.26.0",
+    "normalize.css": "^8.0.0",
+    "nuxt": "^1.4.0",
+    "nuxt-device-detect": "^1.1.1",
+    "vue-custom-properties": "^0.1.0"
+  },
+  "devDependencies": {
+    "node-sass": "^4.9.0",
+    "push-dir": "^0.4.1",
+    "sass-loader": "^7.0.1"
+  }
+}
